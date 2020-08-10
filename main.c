@@ -1,5 +1,5 @@
 /* include/sharp/shdiag_smd.h
-
+*/
 #define SHDIAG_SMD_DEVFILE "/dev/smd_read"
 
 #define SHDIAG_IOC_MAGIC 's'
@@ -11,6 +11,7 @@ printf("SHDIAG_IOCTL_SET_QXDMFLG = %x\n",SHDIAG_IOCTL_SET_QXDMFLG);
 //SHDIAG_IOCTL_SET_QXDMFLG = 40017301
 
 /* tewilove sharp diag enable ioctl
+*/
 #include <sys/types.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -30,7 +31,7 @@ return rc;
 }
 
 /* drivers/sharp/shdiag/smd_read.c
-
+*/
 static int smd_ioctl_set_qxdmflg(unsigned long arg)
 {
 	int ret = 0;
